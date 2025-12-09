@@ -1,4 +1,5 @@
 // components/Header.tsx
+"use client"
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
@@ -48,7 +49,7 @@ export default function Header() {
           className="md:hidden p-2 rounded-lg hover:bg-stone-100"
           aria-label="Menu"
         >
-          {isOpen ? <Text>X</Text> : <Text>Menu</Text>}
+          {isOpen ? <span>X</span> : <span>Menu</span>}
         </button>
       </div>
 
